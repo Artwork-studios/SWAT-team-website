@@ -1,0 +1,67 @@
+/* remove scrollbar */
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+/*  fix footer  */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Centered text */
+    position: relative; /* Allows positioning of map */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width for the footer content */
+    margin: 0 auto; /* Center align the content */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+}
+
+.social-icons {
+    display: flex; /* Horizontal layout for icons */
+    gap: 20px; /* Space between icons */
+    margin-bottom: 20px; /* Space below the icons */
+}
+
+#map {
+    width: 100%; /* Make it full width */
+    max-width: 500px; /* Keep your max width */
+    height: 500px; /* Fixed height */
+}
+
+
+
+
+/* change link color */
+
+a {
+    transition: color 0.2s;
+    color: #fff;
+}
+
+a:hover{
+    transition: color 0.2s;
+    color: #999;
+}
+
+/* mobile optimization */
+@media (max-width: 600px) {
+    footer {
+        padding: 15px 0; /* Less padding on small screens */
+    }
+    #map {
+        width: 100%; /* Allow the map to take full width */
+        height: 300px; /* Shorten the height on mobile */
+    }
+    #pngimg {
+        min-width: 200px;
+        min-height: 5px;
+        max-width: 100%;
+        max-height: 180px;
+        height: 50%;
+    }
+}
